@@ -1,25 +1,22 @@
 import React from "react";
-import { GoogleMap, LoadScript, Marker } from "@react-google-maps/api";
+import { MapContainer, TileLayer, Marker, Popup } from "react-leaflet";
+import "leaflet/dist/leaflet.css";
 import "./UnlimitedTracking.css";
 
-const containerStyle = {
-  width: "100%",
-  height: "100%",
-};
-
-const center = {
-  lat: -3.745,
-  lng: -38.523,
-};
+const center = [51.505, -0.09]; // Latitude and Longitude for the center of the map
 
 const UnlimitedTracking = () => {
   return (
     <div className="map-container">
-      <LoadScript googleMapsApiKey="YOUR_GOOGLE_MAPS_API_KEY">
-        <GoogleMap mapContainerStyle={containerStyle} center={center} zoom={10}>
-          <Marker position={center} />
-        </GoogleMap>
-      </LoadScript>
+      <MapContainer center={center} zoom={10} className="leaflet-map">
+        <TileLayer
+          url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
+          attribution='Map data © <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+        />
+        <Marker position={center}>
+          <Popup>A sample marker on OpenStreetMap.</Popup>
+        </Marker>
+      </MapContainer>
     </div>
   );
 };

@@ -34,7 +34,6 @@ function App() {
               <Route path="*" element={<Navigate to="/watcher" />} />
             </>
           )}
-          <Route path="*" element={<Navigate to="/" />} />
         </Routes>
         <Footer />
       </div>
