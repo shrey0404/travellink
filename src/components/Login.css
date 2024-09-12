@@ -1,0 +1,125 @@
+/* src/components/Login.css */
+.login-container {
+  text-align: center;
+  margin: 20px;
+  background-image: url("../images//hero.jpg");
+}
+
+.login-container select {
+  padding: 10px;
+  margin: 10px 0;
+}
+
+.login-container button {
+  background-color: #007BFF;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.login-container button:hover {
+  background-color: #0056b3;
+}
+
+/* src/components/Login.css */
+.login-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background-color: #f4f4f9;
+    padding: 20px;
+  }
+  
+.login-container h2 {
+    color: white;
+}
+
+  .login-box {
+    background: #fff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px;
+    text-align: center;
+  }
+  
+  .login-box h2 {
+    margin-bottom: 20px;
+    font-size: 24px;
+    color: #333;
+  }
+  
+  .login-box select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 16px;
+    margin: 10px 0;
+  }
+  
+  .login-box button {
+    background-color: #007BFF;
+    color: #fff;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s, transform 0.2s;
+  }
+  
+  .login-box button:hover {
+    background-color: #0056b3;
+    transform: scale(1.05);
+  }
+  
+  .login-box button:active {
+    transform: scale(0.95);
+  }
+  
+  /* Responsive Styles */
+  @media (max-width: 768px) {
+    .login-box {
+      padding: 20px;
+    }
+  
+    .login-box h2 {
+      font-size: 20px;
+    }
+  
+    .login-box select {
+      font-size: 14px;
+    }
+  
+    .login-box button {
+      font-size: 14px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .login-box {
+      padding: 15px;
+      max-width: 300px;
+    }
+  
+    .login-box h2 {
+      font-size: 18px;
+    }
+  
+    .login-box select {
+      font-size: 12px;
+    }
+  
+    .login-box button {
+      font-size: 12px;
+      padding: 10px 16px;
+    }
+  }
+  

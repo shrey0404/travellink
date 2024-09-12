@@ -1,0 +1,81 @@
+.video-calling {
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+  }
+  
+  .video-button {
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .video-button:hover {
+    background-color: #45a049;
+  }
+  
+  @media (max-width: 768px) {
+    .video-calling {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .video-button {
+      margin-bottom: 10px;
+      width: 100%;
+    }
+  }
+  
+  .video-calling {
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .video-button {
+    padding: 12px 24px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    text-transform: uppercase;
+    transition: background-color 0.3s, transform 0.3s;
+  }
+  
+  .video-button.google-meet {
+    background: linear-gradient(90deg, #ff3d00, #ff6f00);
+    color: white;
+  }
+  
+  .video-button.whatsapp {
+    background: linear-gradient(90deg, #25d366, #128c7e);
+    color: white;
+  }
+  
+  .video-button:hover {
+    transform: scale(1.05);
+  }
+  
+  @media (max-width: 768px) {
+    .video-calling {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .video-button {
+      margin-bottom: 15px;
+      width: 100%;
+      max-width: 300px;
+    }
+  }
+  

@@ -1,0 +1,47 @@
+.messaging-sos-container {
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+  }
+  
+  .title {
+    margin-bottom: 20px;
+    color: #333;
+    font-size: 24px;
+    font-weight: bold;
+  }
+  
+  .sos-button {
+    padding: 12px 25px;
+    background: linear-gradient(90deg, #ff4b2b, #ff416c);
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: bold;
+    text-transform: uppercase;
+    transition: background-color 0.3s, transform 0.3s;
+  }
+  
+  .sos-button:hover {
+    background: linear-gradient(90deg, #ff6b6b, #ff416c);
+    transform: scale(1.05);
+  }
+  
+  @media (max-width: 768px) {
+    .messaging-sos-container {
+      padding: 15px;
+    }
+  
+    .sos-button {
+      width: 100%;
+      max-width: 300px;
+      font-size: 16px;
+    }
+  }
+  

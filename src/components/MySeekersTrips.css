@@ -1,0 +1,60 @@
+.my-seekers-trips {
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #e9e9e9;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .title {
+    margin-bottom: 20px;
+    color: #333;
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+  }
+  
+  .seekers-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  
+  .seeker-card {
+    flex: 1 1 calc(33% - 20px);
+    margin: 10px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    text-align: center;
+  }
+  
+  .seeker-image {
+    width: 100%;
+    height: auto;
+  }
+  
+  .seeker-info {
+    padding: 10px;
+  }
+  
+  .seeker-name {
+    margin: 10px 0 5px;
+    color: #333;
+    font-size: 18px;
+    font-weight: bold;
+  }
+  
+  .seeker-trip {
+    color: #666;
+    font-size: 14px;
+  }
+  
+  @media (max-width: 768px) {
+    .seeker-card {
+      flex: 1 1 100%;
+    }
+  }
+  

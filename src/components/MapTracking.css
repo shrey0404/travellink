@@ -1,0 +1,26 @@
+.map-container {
+    border-radius: 10px;
+    overflow: hidden;
+  }
+  
+  .marker {
+    background-color: #ff5252;
+    border-radius: 50%;
+    width: 10px;
+    height: 10px;
+  }
+  
+  .map-container {
+    height: 400px;
+    border-radius: 10px;
+  }
+  
+  .leaflet-popup-content {
+    font-size: 14px;
+  }
+  
+  .leaflet-marker-icon {
+    background-color: #ff5252;
+    border-radius: 50%;
+  }
+  
