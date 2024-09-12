@@ -1,7 +1,7 @@
 import React from "react";
 import "./NearMeAdsWatcher.css";
-import cafe from "../images/cafe.avif";
-import hotel from "../images/hotel.avif";
+import cafe from "../images/hotel3.avif";
+import hotel from "../images/hotel2.avif";
 
 const ads = [
   {

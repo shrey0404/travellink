@@ -1,8 +1,8 @@
 import React from "react";
 import "./NearMeAds.css";
-import cozy from "../images/cozy-cafe.avif";
-import luxury from "../images/Luxury Hotel .avif";
-import charming from "../images/Charming Bistro .avif";
+import cozy from "../images/hotel1.avif";
+import luxury from "../images/hotel2.avif";
+import charming from "../images/hotel3.avif";
 
 const ads = [
   {

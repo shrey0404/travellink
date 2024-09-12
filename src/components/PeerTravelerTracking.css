@@ -1,0 +1,69 @@
+.peer-tracker-container {
+    padding: 20px;
+  }
+  
+  .card-container {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: center; /* Center cards horizontally */
+  }
+  
+  .card {
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 300px;
+    overflow: hidden;
+    margin-bottom: 20px;
+    /* Ensure cards have a consistent height on smaller screens */
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .card-image {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+  }
+  
+  .card-content {
+    padding: 15px;
+    flex: 1; /* Allow content to expand and fill available space */
+  }
+  
+  .card-content h4 {
+    margin: 0 0 10px 0;
+  }
+  
+  .card-content p {
+    margin: 5px 0;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .card-container {
+      gap: 15px;
+    }
+  
+    .card {
+      max-width: 100%;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .card-container {
+      gap: 10px;
+      padding: 0 10px; /* Add padding on small screens */
+    }
+  
+    .card {
+      margin: 10px 0;
+    }
+  
+    .card-image {
+      height: 120px; /* Adjust image height on small screens */
+    }
+  }
+  
